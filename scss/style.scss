@@ -1,0 +1,241 @@
+    $mastersize: 8px;
+    @mixin body {
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: $mastersize *3;
+        letter-spacing: $mastersize/12;
+    }
+    
+    h1 {
+        font-family: 'Karla', sans-serif;
+        font-weight: 600;
+        font-size: $mastersize * 6;
+        line-height: $mastersize *6;
+    }
+    
+    h2 {
+        font-family: 'Karla', sans-serif;
+        font-weight: 600;
+        font-size: $mastersize * 5;
+        line-height: $mastersize *5;
+    }
+    
+    h5 {
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: $mastersize *3;
+        letter-spacing: $mastersize/12;
+    }
+    
+    p {
+        @include body;
+    }
+    
+    a {
+        font-family: 'Karla', sans-serif;
+        font-size: 18px;
+    }
+    
+    nav {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        right: 0;
+        transition: all 2s ease;
+    }
+    
+    .visible {
+        display: block;
+        transition: all 2s ease;
+    }
+    
+    .fp-controlArrow.fp-prev {
+        left: 15px;
+        border-width: 20px 20px 20px 0px;
+        border-color: transparent #cccccc transparent transparent;
+        border-radius: 3px;
+    }
+    
+    .fp-controlArrow.fp-next {
+        right: 15px;
+        border-width: 20px 0 20px 20px;
+        border-color: transparent transparent transparent #cccccc;
+        border-radius: 3px;
+    }
+    
+    .btn-default {
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        padding: 16px;
+        border-radius: 8px;
+        margin: $mastersize;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    .btn-outlined {
+        color: black;
+        text-decoration: none;
+        background-color: transparent;
+        padding: 16px;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin: $mastersize;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    //FIRST SECTION
+    .b--section-primary {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .b--extract {
+        margin: auto 0;
+        &__title {
+            margin-bottom: $mastersize*3;
+        }
+        &__subtitle {
+            margin-bottom: $mastersize*5;
+        }
+    }
+    
+    .b--img-primary {
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translatey(280px);
+        }
+    }
+    
+    //SECOND SECTION
+    .b--section-secondary {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .b--profile {
+        &__title {
+            margin-bottom: $mastersize*3;
+        }
+        &__content {
+            margin-bottom: $mastersize*5;
+        }
+    }
+    
+    .b--quote {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        @include body;
+        li {
+            @include body;
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+            // background: #f4f4f4;
+            margin: 15px;
+            padding: 5px 10px;
+            &:after {
+                content: '"';
+                position: absolute;
+                left: -10px;
+                top: 10px;
+                font-size: 60px;
+                color: #b5b5b5;
+                z-index: -1;
+            }
+        }
+    }
+    
+    .b--img-secondary {
+        position: absolute;
+        left: -200px;
+        opacity: 0;
+        top: 0;
+        transition: all 1s ease;
+        img {
+            width: 695px;
+        }
+    }
+    
+    //THIRD SECTION
+    .b--section-tertiary {
+        position: relative;
+        background-color: black;
+        overflow: hidden;
+        padding-top: 50px;
+    }
+    
+    .img-miguel {
+        position: absolute;
+        opacity: 0;
+        bottom: 0;
+        right: -100px;
+        transition: all 1s ease;
+    }
+    
+    .b--card-experience {
+        background: white;
+        border: 1px solid #eeeeee;
+        padding: 20px;
+        transition: all 1s ease;
+        &:hover {
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+        }
+    }
+    
+    //FOURTH SECTION
+    .b--section-fourth {}
+    
+    .b--list-skills {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        span {
+            @include body;
+            font-weight: 600;
+        }
+        &__category {
+            background: #f4f4f4;
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+        li {
+            border: 1px solid #fcfcfc;
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px;
+            background: white;
+        }
+    }
+    
+    @media screen and (max-width: 992px) {
+        h1 {
+            font-size: $mastersize*4;
+        }
+        .b--img-primary {
+            img {
+                position: relative;
+                max-width: 60%;
+                transform: translatey(0px);
+            }
+        }
+        .b--card-experience {
+            padding: 12px;
+        }
+        .b--section-tertiary {
+            padding-top: 5px;
+        }
+    }

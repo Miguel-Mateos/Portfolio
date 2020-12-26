@@ -1,0 +1,148 @@
+    $mastersize: 8px;
+    @mixin body {
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: $mastersize *3;
+        letter-spacing: $mastersize/12;
+    }
+    
+    .fp-controlArrow.fp-prev {
+        left: 5px;
+        border-width: 20px 20px 20px 0px;
+        border-color: transparent #cccccc transparent transparent;
+        border-radius: 3px;
+    }
+    
+    .fp-controlArrow.fp-next {
+        right: 5px;
+        border-width: 20px 0 20px 20px;
+        border-color: transparent transparent transparent #cccccc;
+        border-radius: 3px;
+    }
+    
+    .btn-default {
+        color: white;
+        text-decoration: none;
+        background-color: black;
+        padding: 20px 30px;
+        border-radius: 8px;
+        margin: 8px;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    .btn-outlined {
+        color: black;
+        text-decoration: none;
+        background-color: white;
+        padding: 20px 30px;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin: 8px;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    //FIRST SECTION
+    .b--section-primary {
+        height: auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 40px;
+            width: 650px;
+        }
+    }
+    
+    .b--extract-s1 {
+        padding-left: 100px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+        padding-top: 0;
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        p {
+            @include body;
+        }
+    }
+    
+    //SECOND SECTION
+    .b--section-secondary {
+        height: auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 40px;
+            width: 650px;
+        }
+    }
+    
+    .b--extract-s2 {
+        padding: 20px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            @include body;
+            margin-bottom: 20px;
+        }
+    }
+    
+    //THIRD SECTION
+    .b--section-tertiary {
+        height: auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 40px;
+            width: 650px;
+        }
+    }
+    
+    .b--card-experience {
+        border: 1px solid #f4f4f4;
+        padding: 20px;
+        // transform: translateY(-100px);
+    }
+    
+    //FOURTH
+    .b--list-skills {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        span {
+            @include body;
+            font-weight: 600;
+        }
+        &__category {
+            background: white;
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+        li {
+            border: 1px solid #e2e2e2;
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px;
+            background: white;
+        }
+    }
+    
+    @media screen and (max-width: 992px) {}

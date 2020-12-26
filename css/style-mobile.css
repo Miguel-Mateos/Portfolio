@@ -1,0 +1,157 @@
+.fp-controlArrow.fp-prev {
+  left: 5px;
+  border-width: 20px 20px 20px 0px;
+  border-color: transparent #cccccc transparent transparent;
+  border-radius: 3px;
+}
+
+.fp-controlArrow.fp-next {
+  right: 5px;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent #cccccc;
+  border-radius: 3px;
+}
+
+.btn-default {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.btn-default:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-outlined {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  padding: 20px 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.btn-outlined:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.b--section-primary {
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.b--section-primary img {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 650px;
+}
+
+.b--extract-s1 {
+  padding-left: 100px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-top: 0;
+}
+
+.b--extract-s1 h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.b--extract-s1 p {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.66667px;
+}
+
+.b--section-secondary {
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.b--section-secondary img {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 650px;
+}
+
+.b--extract-s2 {
+  padding: 20px;
+}
+
+.b--extract-s2 h2 {
+  margin-bottom: 20px;
+}
+
+.b--extract-s2 p {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.66667px;
+  margin-bottom: 20px;
+}
+
+.b--section-tertiary {
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.b--section-tertiary img {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  width: 650px;
+}
+
+.b--card-experience {
+  border: 1px solid #f4f4f4;
+  padding: 20px;
+}
+
+.b--list-skills {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.b--list-skills span {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.66667px;
+  font-weight: 600;
+}
+
+.b--list-skills__category {
+  background: white;
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.b--list-skills li {
+  border: 1px solid #e2e2e2;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 10px;
+  background: white;
+}
+/*# sourceMappingURL=style-mobile.css.map */
